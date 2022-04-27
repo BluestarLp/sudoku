@@ -1,4 +1,4 @@
-import { fstat } from "fs";
+import { fs } from "fs";
 
 export default function handler(req, res) {
   fs.writeFileSync("index.html", "<h1>Hello World</h1>");
