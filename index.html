@@ -8,6 +8,14 @@
     <script defer>
         async function Test() {
             let test = await fetch("https://sudoku-snowy.vercel.app/api/index");
+
+            test = test.json();
+            console.log(test);
+        }
+
+        async function Test2() {
+            let test = await fetch("https://sudoku-snowy.vercel.app/api/index");
+
             console.log(test);
         }
     </script>
@@ -15,5 +23,6 @@
 <body>
     <h1>Test</h1>
     <button onclick="Test();">Test</button>
+    <button onclick="Test2();">Test2</button>
 </body>
 </html>
