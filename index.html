@@ -9,7 +9,7 @@
         async function Test() {
             let test = await fetch("https://sudoku-snowy.vercel.app/api/index");
 
-            test = test.json();
+            test = await test.json();
             console.log(test);
         }
 
