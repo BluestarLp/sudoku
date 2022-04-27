@@ -1,3 +1,5 @@
 export default function handler(req, res) {
-  res.status(200).send("Hello from Lambda!");
+  res.status(200).json({
+    message: 'Welcome to the API',
+  });
 }
